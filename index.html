@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body onload="init()">
 
+    <h1>Tic Tac Toe</h1>
+    <div class="player-container" id="players">
+        <div class="svg">
+            <svg viewBox="0 0 70 70" width="70" height="70">
+                <circle cx="35" cy="35" r="30" fill="none" stroke="#23789b" stroke-width="5">
+                </circle>
+            </svg>
+            <svg viewBox="0 0 50 50" width="90" height="90">
+                <line x1="10" y1="10" x2="40" y2="40" stroke="#fdc000" stroke-width="3">
+                </line>
+                <line x1="40" y1="10" x2="10" y2="40" stroke="#fdc000" stroke-width="3">
+                </line>
+            </svg>
+        </div>
+        <div class="players">
+            <p>player 1</p>
+            <p>player 2</p>
+        </div>
 
-<div id="container"></div>
+    </div>
+    <div id="winner-container" style="display: none;">
+        <p id="winner-text"></p>
+      </div>
+      
+    </div>
+    <div id="container">
 
+    </div>
 
+    <button onclick="restartGame()">Spiel neu starten</button>
 
 
     <script src="script.js"></script>
+
 </body>
+
 </html>
